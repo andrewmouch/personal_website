@@ -1,4 +1,4 @@
-import { Container } from 'components/Container';
+import { Container } from '../components/Container';
 import { Dropdown } from 'components/Dropdown';
 import Image from 'next/image'
 import icon from 'public/icon.png'
