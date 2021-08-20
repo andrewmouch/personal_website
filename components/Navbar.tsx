@@ -12,7 +12,7 @@ export const Navbar = (props: NavbarProps) => {
   return (
     <div className={'py-3 flex justify-between align-middle sticky bg-black top-0 z-10'}>
       <div className={'mt-3 cursor-pointer transition duration-75 ease-in transform hover:scale-105 active:scale-100 select-none'}>
-        <img onClick={() => { scrollToTop() }} sclassName={'w-10 mt-1'} src={'logo.svg'} />
+        <img onClick={() => { scrollToTop() }} className={'w-10'} src={'logo.svg'} />
       </div>
       <div className={'flex font-bold text-3xl align-middle mt-3'}>
         <div onClick={() => { scrollToExperience() }} className={navLinkClasses}>

@@ -17,7 +17,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": "/Users/andrewmouchantaf/Documents/personal_website"
+    "baseUrl": "/Users/andrewmouchantaf/Documents/personal_website",
+    "types": [
+      "@types/aria-query"
+    ]
   },
   "include": [
     "next-env.d.ts",

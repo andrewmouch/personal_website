@@ -6,7 +6,7 @@ import { useState } from 'react'
 export type Experience = {
   name: string
   companyName?: string
-  companyIconPath: string
+  companyIconPath?: string
   term: string // 'WINTER' | 'SUMMER' | 'FALL'
   location: string
   points: string[]
