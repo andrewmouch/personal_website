@@ -1,7 +1,7 @@
 import { Container } from '../components/Container';
 import { Dropdown } from '../components/Dropdown';
 import Image from 'next/image'
-import icon from 'public/icon.png'
+import icon from '../public/icon.png'
 import { experiences } from '../utils/data'
 import { useRef } from "react"
 

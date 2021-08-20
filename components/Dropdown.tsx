@@ -1,5 +1,5 @@
-import upcaret from 'public/upcaret.svg'
-import downcaret from 'public/downcaret.svg'
+import upcaret from '../public/upcaret.svg'
+import downcaret from '../public/downcaret.svg'
 import Image from 'next/image'
 import { useState } from 'react'
 
