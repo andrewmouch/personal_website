@@ -31,9 +31,6 @@ export default function Home(props: HomeProps) {
   }
 
   const scrollToTop = () => homeRef.current.scrollIntoView({ behavior: "smooth" })
-  // const scrollToExperience = () => {
-  //   experienceRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" })
-  // }
   const scrollToProjects = () => projectsRef.current.scrollIntoView({ behavior: "smooth" })
   const scrollToInterests = () => interestsRef.current.scrollIntoView({ behavior: "smooth" })
 
@@ -49,16 +46,15 @@ export default function Home(props: HomeProps) {
           Hey I'm Andrew Mouchantaf,
         </div>
         <div className={'mt-5 flex justify-between'} >
-          <div className={'flex-none w-52'}>
+          <div className={'my-auto flex-none w-52 hidden lg:block'}>
             <Image src={icon} width={200} height={200} />
           </div>
-          <div className={'flex-grow ml-5 mt-2 text-xl font-light'}>
+          <div className={'flex-grow lg:ml-5 mt-2 text-xl font-light'}>
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio.
               Etiam porttitor, nisi eget mattis bibendum, metus lectus pretium sem, nec sodales nulla turpis in risus.
               Phasellus in tempus justo, ac congue lacus. In lacinia ante et massa suscipit imperdiet. Morbi ut purus.
             </div>
-
             <div className={'mt-3'} >
               Donec sed volutpat magna. Donec ante tellus, iaculis sed nulla id, sodales bibendum lacus. Suspendisse potenti.
               In in tortor maximus risus ornare bibendum. Ut consectetur nisi quis quam imperdiet, eu sagittis mi viverra.
@@ -105,6 +101,7 @@ export default function Home(props: HomeProps) {
           <li>Brazilian Jiu Jitsu</li>
           <li>Philosophy</li>
           <li>Fitness</li>
+          <li>Learning Languages</li>
         </ul>
       </Container>
     </div >

@@ -27,7 +27,7 @@ export const Container = (props: ContainerProps) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className={"container xl:w-8/12 mx-auto mb-12"}>
+      <div className={"container w-11/12 xl:w-8/12 mx-auto mb-12"}>
         <Navbar
           scrollToTop={scrollToTop}
           scrollToExperience={scrollToExperience}
