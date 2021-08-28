@@ -52,7 +52,7 @@ export const experiences = {
   2018: [
     {
       name: "Software Engineer",
-      companyName: "Sony Electronics",
+      companyName: "Sony",
       term: "FALL",
       location: "Austin, TX",
       points: [

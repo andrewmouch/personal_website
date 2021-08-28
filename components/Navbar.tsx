@@ -14,11 +14,9 @@ type NavbarProps = {
 export const Navbar = (props: NavbarProps) => {
   const { width } = useWindowDimensions()
 
-  console.log(width)
-
   const { scrollToTop, scrollToExperience, scrollToProjects, scrollToInterests } = props
   return (
-    <div className={'py-3 px-5 md:px-0 flex justify-between align-middle sticky bg-black top-0 z-10'}>
+    <div className={'py-3 px-5 md:px-0 hidden md:flex justify-between align-middle sticky bg-black top-0 z-10'}>
       <div className={'mt-3 md:cursor-pointer transition duration-75 ease-in transform md:hover:scale-105 active:scale-100 select-none'}>
         <img
           onClick={() => {

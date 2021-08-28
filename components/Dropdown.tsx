@@ -36,7 +36,7 @@ export const Dropdown = (props: DropdownProps) => {
   const { year, experiences } = props;
   return (
     <>
-      <div className={'border-b border-t p-3 text-4xl flex justify-between cursor-pointer select-none'} onClick={() => { setOpen(!open) }}>
+      <div className={' border-b border-t p-3 text-4xl flex justify-between cursor-pointer select-none'} onClick={() => { setOpen(!open) }}>
         <div>
           {year}
         </div>
@@ -49,21 +49,21 @@ export const Dropdown = (props: DropdownProps) => {
         experiences.map(experience => {
           return (
             <div className={'px-6 py-4'}>
-              <div className={'flex font-semibold underline text-2.5xl'}>
+              <div className={'font-semibold underline text-2.5xl'}>
                 {getDateRange(experience.term)}
               </div>
-              <div className={'flex justify-between'}>
-                <div className={'flex font-bold text-2.5xl'}>
-                  <div className={'pr-1'}>{experience.name + ' - '}</div>
-                  <div className={'flex'}>
+              <div className={'md:flex justify-between'}>
+                <div className={'md:flex font-bold text-2xl md:text-2.5xl'}>
+                  <div className={'pr-1'}>{experience.name}<span className={'hidden md:inline'}>{' - '}</span></div>
+                  <div>
                     {experience.companyIconPath && <img className={'w-28'} src={experience.companyIconPath} />}
                     {experience.companyName && <div className={'font-medium'}> {experience.companyName} </div>}
                   </div>
                 </div>
-                <div className={'flex'}>
-                  <div className={'flex font-medium text-xl'}>
-                    <img className={'w-6'} src={'location.svg'} />
-                    <div className={'ml-1 mt-2'}>{experience.location}</div>
+                <div className={'hidden md:flex'}>
+                  <div className={'flex font-medium text-xl mb-1 md:mb-0'}>
+                    <img className={'w-5 md:w-6'} src={'location.svg'} />
+                    <div className={'ml-1 md:mt-2'}>{experience.location}</div>
                   </div>
                 </div>
               </div>

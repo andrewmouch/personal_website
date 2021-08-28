@@ -42,14 +42,31 @@ export default function Home(props: HomeProps) {
         scrollToProjects={scrollToProjects}
         scrollToInterests={scrollToInterests}
       >
-        <div className={'text-5xl font-bold'}>
+        <div className={'text-4xl md:text-5xl font-bold text-center'}>
           Hey I'm Andrew Mouchantaf,
+        </div>
+        <div className={'flex md:hidden mt-3 justify-center'}>
+          <div className={'mx-3 cursor-pointer'}>
+            <a target="_blank" href={'https://github.com/andrewmouch'}>
+              <img src={"github.svg"} className={'w-9'} />
+            </a>
+          </div>
+          <div className={'mx-3 cursor-pointer'}>
+            <a target="_blank" href={'https://www.linkedin.com/in/andrewmouch/'}>
+              <img src={"linkedin.svg"} className={'w-9'} />
+            </a>
+          </div>
+          <div className={'mx-3 cursor-pointer'}>
+            <a target="_blank" href={'mailto:andrewmouchantaf@gmail.com'}>
+              <img src={"email.svg"} className={'w-9'} />
+            </a>
+          </div>
         </div>
         <div className={'mt-5 flex justify-between'} >
           <div className={'my-auto flex-none w-52 hidden lg:block'}>
             <Image src={icon} width={200} height={200} />
           </div>
-          <div className={'flex-grow lg:ml-5 mt-2 text-xl font-light'}>
+          <div className={'flex-grow lg:ml-5 mt-2 text-lg md:text-xl font-light'}>
             <div>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio.
               Etiam porttitor, nisi eget mattis bibendum, metus lectus pretium sem, nec sodales nulla turpis in risus.
@@ -63,14 +80,14 @@ export default function Home(props: HomeProps) {
             </div>
           </div>
         </div>
-        <div id={'experience'} ref={experienceRef} className={'mt-10 mb-8 text-5xl font-bold scroll'} >
+        <div id={'experience'} ref={experienceRef} className={'mt-10 mb-8 text-4xl md:text-5xl font-bold scroll'} >
           Experience
         </div>
         <Dropdown year={2021} experiences={experiences[2021]} />
         <Dropdown year={2020} experiences={experiences[2020]} />
         <Dropdown year={2019} experiences={experiences[2019]} />
         <Dropdown year={2018} experiences={experiences[2018]} />
-        <div id={'projects'} ref={projectsRef} className={'mt-10 text-5xl font-bold'}>
+        <div id={'projects'} ref={projectsRef} className={'mt-10 text-4xl md:text-5xl font-bold'}>
           Projects
         </div>
         <div className={'px-3 mt-1 mb-8'}>
@@ -93,7 +110,7 @@ export default function Home(props: HomeProps) {
             })}
           </ul>
         </div>
-        <div id={'interests'} ref={interestsRef} className={'mt-10 text-5xl font-bold'}>
+        <div id={'interests'} ref={interestsRef} className={'mt-10 text-4xl md:text-5xl font-bold'}>
           Interests
         </div>
         <ul className={'list-disc pl-6'}>
