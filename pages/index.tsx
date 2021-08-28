@@ -42,7 +42,7 @@ export default function Home(props: HomeProps) {
         scrollToProjects={scrollToProjects}
         scrollToInterests={scrollToInterests}
       >
-        <div className={'text-4xl md:text-5xl font-bold text-center'}>
+        <div className={'text-4xl md:text-5xl font-bold text-center '}>
           Hey I'm Andrew Mouchantaf,
         </div>
         <div className={'flex md:hidden mt-3 justify-center'}>
