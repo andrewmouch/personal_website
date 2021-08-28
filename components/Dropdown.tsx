@@ -36,7 +36,7 @@ export const Dropdown = (props: DropdownProps) => {
   const { year, experiences } = props;
   return (
     <>
-      <div className={' border-b border-t p-3 text-4xl flex justify-between cursor-pointer select-none'} onClick={() => { setOpen(!open) }}>
+      <div className={' border-b border-t md:py-2 px-3 text-3xl md:text-4xl flex justify-between cursor-pointer select-none'} onClick={() => { setOpen(!open) }}>
         <div>
           {year}
         </div>
