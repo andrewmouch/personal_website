@@ -49,7 +49,7 @@ export const Dropdown = (props: DropdownProps) => {
         experiences.map(experience => {
           return (
             <div className={'px-6 py-4'}>
-              <div className={'font-semibold underline text-2.5xl'}>
+              <div className={'font-semibold underline text-1xl md:text-2xl'}>
                 {getDateRange(experience.term)}
               </div>
               <div className={'md:flex justify-between'}>
