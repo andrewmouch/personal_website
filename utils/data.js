@@ -7,7 +7,7 @@ export const experiences = {
       term: "SUMMER",
       location: "Remote",
       points: [
-        "Contributed fullstack features to application in React w/ Typescript, Golang GraphQL API (using Gin), and PostgreSQL",
+        "Contributed fullstack features to application in React (Typescript), Golang GraphQL API (using Gin), and PostgreSQL",
         "Created an admin tool for admins to securely impersonate their users and monitor resource access",
         "Incorporated infinite scrolling to application tables for seamless data display and decreased API latency",
         "Implemented PDF and CSV file generation for clients to review user access and streamline data extraction"
@@ -49,7 +49,7 @@ export const experiences = {
       term: "SUMMER",
       location: "Toronto, ON",
       points: [
-        "Client success team engineer, developing fullstack features in React w/ Typescript, Redux, C# RESTAPI and MySQL",
+        "Client success team engineer, developing fullstack features in React (Typescript), Redux, C# RESTAPI and MySQL",
         "Developed feature allowing foreign clients to localize workspaces and remove reliance on browser translations",
         "Implemented permissioning system among workspace users and enforced this through the API",
         "Optimized database queries through the ORM to reduce latency of data retrieval at certain endpoints by up to 15%"
@@ -87,25 +87,25 @@ export const projects = [
   {
     projectName: "speakeezy",
     projectPoints: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio. Etiam porttitor, nisi eget mattis bibendum.",
-      "Phasellus vitae tellus interdum, tempus odio nec, placerat urna. Morbi laoreet nec nunc quis rutrum. Nulla quis dui lobortis libero pellentesque hendrerit a at nisi.",
-      "Nam viverra sem sit amet leo ultricies posuere. Vestibulum pulvinar vulputate velit ut sollicitudin. Maecenas porttitor blandit lorem, eu semper nisi pellentesque ut."
-    ]
+      "Next.js and Supabase application for enhancing vocabulary through word repitition and usage",
+      "Currently adding new games/challenges and more word difficulties to accommodate new english speakers",
+    ],
+    applicationUrl: "https://vercel.speakeezy.app/",
+    githubUrl: "https://github.com/andrewmouch/speakeezy"
   },
   {
     projectName: "grape",
     projectPoints: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio. Etiam porttitor, nisi eget mattis bibendum.",
-      "Phasellus vitae tellus interdum, tempus odio nec, placerat urna. Morbi laoreet nec nunc quis rutrum. Nulla quis dui lobortis libero pellentesque hendrerit a at nisi.",
-      "Nam viverra sem sit amet leo ultricies posuere. Vestibulum pulvinar vulputate velit ut sollicitudin. Maecenas porttitor blandit lorem, eu semper nisi pellentesque ut."
-    ]
+      "Early contributor to MERN stack application for creating interactive and structured programming tutorials and documentation",
+    ],
+    applicationUrl: "https://grape.codes/"
+
   },
   {
     projectName: "next-tailwind-typescript",
     projectPoints: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio. Etiam porttitor, nisi eget mattis bibendum.",
-      "Phasellus vitae tellus interdum, tempus odio nec, placerat urna. Morbi laoreet nec nunc quis rutrum. Nulla quis dui lobortis libero pellentesque hendrerit a at nisi.",
-      "Nam viverra sem sit amet leo ultricies posuere. Vestibulum pulvinar vulputate velit ut sollicitudin. Maecenas porttitor blandit lorem, eu semper nisi pellentesque ut."
-    ]
+      "Simple project allowing developers to boot up a Next.js client equipped with tailwind and typescript (100+ npm downloads)",
+    ],
+    applicationUrl: "https://www.npmjs.com/package/next-tailwind-typescript/"
   }
 ]

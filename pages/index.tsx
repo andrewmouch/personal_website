@@ -37,14 +37,14 @@ export default function Home(props: HomeProps) {
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 
-  const scrollToInterests = () => {
-    const id = 'interests';
-    const yOffset = -80;
-    const element = document.getElementById(id);
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  // const scrollToInterests = () => {
+  //   const id = 'interests';
+  //   const yOffset = -80;
+  //   const element = document.getElementById(id);
+  //   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
+  //   window.scrollTo({ top: y, behavior: 'smooth' });
+  // }
 
   return (
     <div ref={homeRef}>
@@ -52,7 +52,7 @@ export default function Home(props: HomeProps) {
         scrollToTop={scrollToTop}
         scrollToExperience={scrollToExperience}
         scrollToProjects={scrollToProjects}
-        scrollToInterests={scrollToInterests}
+      // scrollToInterests={scrollToInterests}
       >
         <div className={'text-4xl md:text-5xl font-bold text-center'}>
           Hey I'm Andrew Mouchantaf,
@@ -80,15 +80,16 @@ export default function Home(props: HomeProps) {
           </div>
           <div className={'flex-grow lg:ml-5 mt-2 text-lg md:text-xl font-light'}>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio.
-              Etiam porttitor, nisi eget mattis bibendum, metus lectus pretium sem, nec sodales nulla turpis in risus.
-              Phasellus in tempus justo, ac congue lacus. In lacinia ante et massa suscipit imperdiet. Morbi ut purus.
+              A curious kid in my final year of mechatronics engineering at the University of Waterloo. I'm interested in
+              solving problems with software, analyzing the world and my actions through philosophy, making music and
+              playing guitar, and fitness through weightlifting and long distance running.
             </div>
             <div className={'mt-3'} >
-              Donec sed volutpat magna. Donec ante tellus, iaculis sed nulla id, sodales bibendum lacus. Suspendisse potenti.
-              In in tortor maximus risus ornare bibendum. Ut consectetur nisi quis quam imperdiet, eu sagittis mi viverra.
-              Praesent eu velit in turpis lacinia vehicula sit amet ac lorem.
-              Ut sed erat aliquam, condimentum diam quis, consequat elit. Cras at elit auctor, molestie magna in, maximus justo.
+              Currently exploring server engine optimized web applications (through Next.js) leveraging
+              the benefits of GraphQL APIs.
+            </div>
+            <div className={'mt-3'} >
+              Feel like working? <a href={'mailto:andrewmouchantaf@gmail.com'} className={'underline'}>Don't hesitate to reach out!</a>
             </div>
           </div>
         </div>
@@ -105,7 +106,7 @@ export default function Home(props: HomeProps) {
         {projects.map(project => (
           <div className={'px-3 mt-1 mb-8'}>
             <div className={'flex font-bold text-2.5xl'}>
-              <div className={'pr-1'}>{project.projectName}</div>
+              <a href={project.applicationUrl} className={'pr-1 underline'}>{project.projectName}</a>
             </div>
             <ul className={'list-disc pl-3'}>
               {project.projectPoints.map(point => {
@@ -114,7 +115,7 @@ export default function Home(props: HomeProps) {
             </ul>
           </div>
         ))}
-        <div id={'interests'} ref={interestsRef} className={'mt-10 text-4xl md:text-5xl font-bold'}>
+        {/* <div id={'interests'} ref={interestsRef} className={'mt-10 text-4xl md:text-5xl font-bold'}>
           Interests
         </div>
         <ul className={'list-disc pl-6'}>
@@ -123,7 +124,7 @@ export default function Home(props: HomeProps) {
           <li>Philosophy</li>
           <li>Fitness</li>
           <li>Learning Languages</li>
-        </ul>
+        </ul> */}
       </Container>
     </div >
   )

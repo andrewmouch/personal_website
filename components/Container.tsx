@@ -8,7 +8,7 @@ type ContainerProps = {
   scrollToTop: () => void
   scrollToExperience: () => void
   scrollToProjects: () => void
-  scrollToInterests: () => void
+  // scrollToInterests: () => void
 }
 
 export const Container = (props: ContainerProps) => {
@@ -18,7 +18,7 @@ export const Container = (props: ContainerProps) => {
     description: description || `My personal page.`,
   };
 
-  const { scrollToTop, scrollToExperience, scrollToProjects, scrollToInterests } = props
+  const { scrollToTop, scrollToExperience, scrollToProjects } = props
   return (
     <>
       <Head>
@@ -32,7 +32,7 @@ export const Container = (props: ContainerProps) => {
           scrollToTop={scrollToTop}
           scrollToExperience={scrollToExperience}
           scrollToProjects={scrollToProjects}
-          scrollToInterests={scrollToInterests}
+        // scrollToInterests={scrollToInterests}
         />
         <div className={"mt-12 px-6"}>
           {children}

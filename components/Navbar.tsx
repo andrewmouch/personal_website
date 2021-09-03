@@ -8,13 +8,13 @@ type NavbarProps = {
   scrollToTop: () => void
   scrollToExperience: () => void
   scrollToProjects: () => void
-  scrollToInterests: () => void
+  // scrollToInterests: () => void
 }
 
 export const Navbar = (props: NavbarProps) => {
   const { width } = useWindowDimensions()
 
-  const { scrollToTop, scrollToExperience, scrollToProjects, scrollToInterests } = props
+  const { scrollToTop, scrollToExperience, scrollToProjects } = props
   return (
     <div className={'py-3 px-5 md:px-0 hidden md:flex justify-between align-middle sticky bg-black top-0 z-10'}>
       <div className={'mt-3 md:cursor-pointer transition duration-75 ease-in transform md:hover:scale-105 active:scale-100 select-none'}>
@@ -35,9 +35,9 @@ export const Navbar = (props: NavbarProps) => {
         <div onClick={() => { scrollToProjects() }} className={navLinkClasses}>
           Projects
         </div>
-        <div onClick={() => { scrollToInterests() }} className={navLinkClasses}>
+        {/* <div onClick={() => { scrollToInterests() }} className={navLinkClasses}>
           Interests
-        </div>
+        </div> */}
         <div className={navLinkClasses}>
           <a target="_blank" href={'https://github.com/andrewmouch'}>
             <img src={"github.svg"} className={'w-7 lg:w-9'} />
