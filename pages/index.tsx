@@ -80,7 +80,7 @@ export default function Home(props: HomeProps) {
           </div>
           <div className={'flex-grow lg:ml-5 mt-2 text-lg md:text-xl font-light'}>
             <div>
-              A curious kid in my final year of mechatronics engineering at the University of Waterloo. I'm interested in
+              A curious guy in my final year of mechatronics engineering at the University of Waterloo. I'm interested in
               solving problems with software, analyzing the world and my actions through philosophy, making music and
               playing guitar, and fitness through weightlifting and long distance running.
             </div>
