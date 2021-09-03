@@ -7,6 +7,8 @@ export type Experience = {
   name: string
   companyName?: string
   companyIconPath?: string
+  small?: boolean
+  large?: boolean
   term: string // 'WINTER' | 'SUMMER' | 'FALL'
   location: string
   points: string[]
@@ -33,6 +35,14 @@ export const Dropdown = (props: DropdownProps) => {
     }
   }
 
+  const getIconSize = (experience: Experience) => {
+    const name = experience.companyName
+    if (name == "data.world") return 'w-40';
+    if (name == "Sony") return 'w-32 mt-1';
+    if (name == "IBM") return 'w-20 mt-1';
+    return 'w-28';
+  }
+
   const { year, experiences } = props;
   return (
     <>
@@ -56,8 +66,8 @@ export const Dropdown = (props: DropdownProps) => {
                 <div className={'md:flex font-bold text-2xl md:text-2.5xl'}>
                   <div className={'pr-1'}>{experience.name}<span className={'hidden md:inline'}>{' - '}</span></div>
                   <div>
-                    {experience.companyIconPath && <img className={'w-28'} src={experience.companyIconPath} />}
-                    {experience.companyName && <div className={'font-medium'}> {experience.companyName} </div>}
+                    {experience.companyIconPath && <img className={getIconSize(experience)} src={experience.companyIconPath} />}
+                    {experience.companyName == "ESI" && <div className={'font-medium'}> {experience.companyName} </div>}
                   </div>
                 </div>
                 <div className={'hidden md:flex'}>
@@ -67,7 +77,7 @@ export const Dropdown = (props: DropdownProps) => {
                   </div>
                 </div>
               </div>
-              <ul className={'list-disc pl-3'}>
+              <ul className={'list-disc text-lg pl-3'}>
                 {experience.points.map(point => {
                   return <li>{point}</li>
                 })}

@@ -2,24 +2,22 @@ import { Container } from '../components/Container';
 import { Dropdown } from '../components/Dropdown';
 import Image from 'next/image'
 import icon from '../public/icon.png'
-import { experiences } from '../utils/data'
+import { experiences, projects } from '../utils/data'
 import { useRef } from "react"
 
 type HomeProps = {
   wordData?: Array<object>
 }
 
-const testArray = [
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget mauris ullamcorper, dapibus elit vel, accumsan odio. Etiam porttitor, nisi eget mattis bibendum.",
-  "Phasellus vitae tellus interdum, tempus odio nec, placerat urna. Morbi laoreet nec nunc quis rutrum. Nulla quis dui lobortis libero pellentesque hendrerit a at nisi.",
-  "Nam viverra sem sit amet leo ultricies posuere. Vestibulum pulvinar vulputate velit ut sollicitudin. Maecenas porttitor blandit lorem, eu semper nisi pellentesque ut."
-]
+console.log(projects)
 
 export default function Home(props: HomeProps) {
   const homeRef = useRef(null)
   const experienceRef = useRef(null)
   const projectsRef = useRef(null)
   const interestsRef = useRef(null)
+
+  const scrollToTop = () => homeRef.current.scrollIntoView({ behavior: "smooth" })
 
   const scrollToExperience = () => {
     const id = 'experience';
@@ -30,9 +28,23 @@ export default function Home(props: HomeProps) {
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 
-  const scrollToTop = () => homeRef.current.scrollIntoView({ behavior: "smooth" })
-  const scrollToProjects = () => projectsRef.current.scrollIntoView({ behavior: "smooth" })
-  const scrollToInterests = () => interestsRef.current.scrollIntoView({ behavior: "smooth" })
+  const scrollToProjects = () => {
+    const id = 'projects';
+    const yOffset = -80;
+    const element = document.getElementById(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  const scrollToInterests = () => {
+    const id = 'interests';
+    const yOffset = -80;
+    const element = document.getElementById(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
 
   return (
     <div ref={homeRef}>
@@ -42,7 +54,7 @@ export default function Home(props: HomeProps) {
         scrollToProjects={scrollToProjects}
         scrollToInterests={scrollToInterests}
       >
-        <div className={'text-4xl md:text-5xl font-bold text-center '}>
+        <div className={'text-4xl md:text-5xl font-bold text-center'}>
           Hey I'm Andrew Mouchantaf,
         </div>
         <div className={'flex md:hidden mt-3 justify-center'}>
@@ -90,26 +102,18 @@ export default function Home(props: HomeProps) {
         <div id={'projects'} ref={projectsRef} className={'mt-10 text-4xl md:text-5xl font-bold'}>
           Projects
         </div>
-        <div className={'px-3 mt-1 mb-8'}>
-          <div className={'flex font-bold text-2.5xl'}>
-            <div className={'pr-1'}>Project Name</div>
+        {projects.map(project => (
+          <div className={'px-3 mt-1 mb-8'}>
+            <div className={'flex font-bold text-2.5xl'}>
+              <div className={'pr-1'}>{project.projectName}</div>
+            </div>
+            <ul className={'list-disc pl-3'}>
+              {project.projectPoints.map(point => {
+                return <li>{point}</li>
+              })}
+            </ul>
           </div>
-          <ul className={'list-disc pl-3'}>
-            {testArray.map(point => {
-              return <li>{point}</li>
-            })}
-          </ul>
-        </div>
-        <div className={'px-3'}>
-          <div className={'flex font-bold text-2.5xl'}>
-            <div className={'pr-1'}>Project Name</div>
-          </div>
-          <ul className={'list-disc pl-3'}>
-            {testArray.map(point => {
-              return <li>{point}</li>
-            })}
-          </ul>
-        </div>
+        ))}
         <div id={'interests'} ref={interestsRef} className={'mt-10 text-4xl md:text-5xl font-bold'}>
           Interests
         </div>
