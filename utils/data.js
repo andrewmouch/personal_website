@@ -1,15 +1,15 @@
 export const experiences = {
   2021: [
     {
-      name: "Software Engineer",
+      name: "Full Stack Software Engineer",
       companyIconPath: "/opal.png",
       companyName: "Opal",
       term: "SUMMER",
       location: "Remote",
       points: [
-        "Contributed fullstack features to application in React (Typescript), Golang GraphQL API (using Gin), and PostgreSQL",
-        "Created an admin tool for admins to securely impersonate their users and monitor resource access",
-        "Incorporated infinite scrolling to application tables for seamless data display and decreased API latency",
+        "Contributed full stack features to application in React (TypeScript), Golang GraphQL API (using Gin), and PostgreSQL",
+        "Created a tool for admins to securely impersonate their users to monitor and amend resource access",
+        "Incorporated infinite scrolling to user interface tables for seamless data display and decreased API latency",
         "Implemented PDF and CSV file generation for clients to review user access and streamline data extraction"
       ]
     }
@@ -22,7 +22,7 @@ export const experiences = {
       term: "FALL",
       location: "Remote",
       points: [
-        "Lead software engineer at startup contributing to web application in React, Flask GraphQL API, and PostgreSQL",
+        "Led engineering team at startup for web application in React, Flask GraphQL API, and PostgreSQL",
         "Created Zoom integration for users to generate meeting rooms when creating virtual events",
         "Implemented employee management system for admins to maintain employee list and integrate with their HRIS",
         "Joined customer meetings to provide technical insight and discuss prospective features and integrations"
@@ -36,8 +36,8 @@ export const experiences = {
       location: "Austin, TX",
       points: [
         "Created a React component to display interactive SQL queries and results on dataset overview pages",
-        "Implemented solution for hidden datasets bug where deleted datasets weren’t unlinking from projects",
-        "Remodelled sidebar component to add CRUD functionality to data items"
+        "Implemented solution for hidden datasets bug where deleted datasets were failing to unlink from projects",
+        "Remodelled sidebar component to improve design and add CRUD functionality to data items",
       ]
     }
   ],
@@ -49,10 +49,10 @@ export const experiences = {
       term: "SUMMER",
       location: "Toronto, ON",
       points: [
-        "Client success team engineer, developing fullstack features in React (Typescript), Redux, C# RESTAPI and MySQL",
-        "Developed feature allowing foreign clients to localize workspaces and remove reliance on browser translations",
-        "Implemented permissioning system among workspace users and enforced this through the API",
-        "Optimized database queries through the ORM to reduce latency of data retrieval at certain endpoints by up to 15%"
+        "Developed full stack features on client success team in React (TypeScript), Redux, C# REST API, and MySQL",
+        "Built a feature allowing foreign clients to localize workspaces and remove reliance on browser translations",
+        "Implemented a workspace user permission system and enforced this through the API",
+        "Optimized database queries through the ORM to reduce latency of data retrieval at multiple endpoints by up to 15%"
       ]
     }
   ],
@@ -64,9 +64,9 @@ export const experiences = {
       term: "FALL",
       location: "Waterloo, ON",
       points: [
-        "Developed plug-in for Visual Exchange application in C++ to be operated by an external control surface",
+        "Developed plug in for Visual Exchange application in C++ to allow operation by an external control surface",
         "Added Ci Media Cloud integration and created internal python library for utilizing the video review functionality",
-        "Implemented inactivity detector for Discussion Capture to shut down hardware to preserve battery life"
+        "Implemented inactivity detector for Discussion Capture to shut down hardware to preserve battery life",
       ]
     },
     {
@@ -75,9 +75,9 @@ export const experiences = {
       term: "WINTER",
       location: "Markham, ON",
       points: [
-        "Added C++ algorithm to calibrate joystick input values to stabilize robot mobility",
+        "Added C++ algorithm to calibrate joystick input values to stabilize robot mobility and mitigate error",
         "Interpolated IR sensor readings with MATLAB to create a location prediction algorithm for the robot",
-        "Developed idle detection, sleep, and wake-up functionality to prolong battery life of controller"
+        "Developed idle detection, sleep, and wake up functionality to prolong battery life of controller",
       ]
     }
   ],
@@ -98,7 +98,7 @@ export const projects = [
     projectPoints: [
       "Early contributor to MERN stack application for creating interactive and structured programming tutorials and documentation",
     ],
-    applicationUrl: "https://grape.codes/"
+    applicationUrl: "https://www.grape.codes/"
 
   },
   {
