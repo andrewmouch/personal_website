@@ -29,7 +29,7 @@ export const experiences = {
       ]
     },
     {
-      name: "Software Engineer",
+      name: "Software Product Engineer",
       companyIconPath: "/data-world-logo.png",
       companyName: "data.world",
       term: "WINTER",
@@ -43,7 +43,7 @@ export const experiences = {
   ],
   2019: [
     {
-      name: "Software Engineer",
+      name: "Core Software Developer",
       companyIconPath: "ibm-logo.png",
       companyName: "IBM",
       term: "SUMMER",
@@ -70,7 +70,7 @@ export const experiences = {
       ]
     },
     {
-      name: "Software Engineer",
+      name: "Robotics Software Developer",
       companyName: "ESI",
       term: "WINTER",
       location: "Markham, ON",
